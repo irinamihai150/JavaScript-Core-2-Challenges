@@ -2,6 +2,19 @@ function calculateWords(chapterOfABook) {
   const wordCount = {};
 
   // Write your code in here
+  let words = chapterOfABook.replace(/\W/g, " ").split(" ");
+  words.forEach((word) => {
+    word.toLowerCase() {
+      if(!word) {
+        return {};
+      }else if (!wordCount[word]) {
+        wordCount[word] = 1;
+      }else {
+        wordCount[word] += 1
+      }
+    }
+    
+  });
 
   return wordCount;
 }

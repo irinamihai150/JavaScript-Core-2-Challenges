@@ -1,8 +1,8 @@
 function calculateWords(chapterOfABook) {
   const wordCount = {};
-
+  //The Split() function splits a string into an array of strings.
   let split = chapterOfABook.split(" ");
-
+  //The forEach() method executes a provided function once for each array element.
   split.forEach((word) => {
     if (word !== "") {
       if (wordCount[word] === undefined) {
